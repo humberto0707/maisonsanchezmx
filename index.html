@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maison Sanchez MX</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,serif}
+body{background:#f8f8f8;color:#111}
+header{background:#fff;text-align:center;padding:35px 15px;border-bottom:1px solid #ddd}
+header h1{letter-spacing:3px;font-size:2.2em}
+header p{color:#777;margin-top:8px}
+.banner{height:260px;background:#111;display:flex;align-items:center;justify-content:center;color:#fff}
+.banner h2{font-size:1.8em}
+section h2{text-align:center;margin:40px 0 15px}
+.productos{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;padding:10px}
+.producto{background:#fff;width:90%;max-width:260px;border-radius:8px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+.producto img{width:100%;height:260px;object-fit:cover;border-radius:8px 8px 0 0}
+.producto h3{text-align:center;margin:10px 0}
+.precio{text-align:center;font-weight:bold}
+.boton{display:block;margin:12px auto 18px;background:#111;color:#fff;border:none;padding:10px;width:85%;border-radius:4px}
+.flotantes{position:fixed;bottom:20px;right:20px;display:flex;flex-direction:column;gap:12px}
+.flotantes a{width:55px;height:55px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:24px;color:#fff;text-decoration:none}
+.wa{background:#25D366}
+.ig{background:#C13584}
+</style>
+</head>
+<body>
+
+<header>
+<h1>MAISON SANCHEZ MX</h1>
+<p>Perfumes originales · Diseñador · Árabes · Nicho</p>
+</header>
+
+<div class="banner">
+<h2>La casa del buen aroma</h2>
+</div>
+
+<section>
+<h2>Producto destacado</h2>
+<div class="productos">
+<div class="producto">
+<img src="https://fimgs.net/mdimg/perfume/o.29761.jpg">
+<h3>YSL Y EDP</h3>
+<p class="precio">$2,799 MXN</p>
+<button class="boton" onclick="wa('YSL Y EDP')">Preguntar</button>
+</div>
+</div>
+</section>
+
+<div class="flotantes">
+<a class="wa" href="https://wa.me/5215519601884" target="_blank">🟢</a>
+<a class="ig" href="https://instagram.com/maison_sanchez_mx" target="_blank">📷</a>
+</div>
+
+<script>
+function wa(p){window.open(`https://wa.me/5215519601884?text=Hola,%20me%20interesa%20${encodeURIComponent(p)}`)}
+</script>
+
+</body>
+</html>
+
